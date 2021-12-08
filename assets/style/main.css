@@ -97,12 +97,16 @@ body {
   line-height: 24px;
 }
 
-.middle-banner {
+.middle-banner-desktop {
   background: #e0e0e0;
   display: grid;
   grid-template-columns: repeat(3, max-content);
   gap: 32px;
   justify-content: center;
+}
+
+.middle-banner-mobile {
+  background: #e0e0e0;
 }
 
 .middle-banner-image {
@@ -122,15 +126,37 @@ body {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 14px;
+    justify-content: center;
+    margin-bottom: 24px;
   }
-
-  .middle-banner-image1 {
-    max-width: 177px;
-    width: 100%;
+  .middle-banner-wrapper {
+    justify-content: center;
+    margin: 0 24px;
   }
-  .middle-banner-image2 {
+  .middle-banner-image {
     max-width: 368px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .middle-banner-grid {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 416px) and (max-width: 1200px) {
+  .middle-banner-image {
+    max-width: 400px;
+    width: 100%;
+  }
+  .middle-banner-desktop {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    align-items: center;
   }
 }
 
@@ -165,6 +191,7 @@ body {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 993px) and (max-width: 1280px) {
   .top-infocard-text {
     max-width: 520px;
