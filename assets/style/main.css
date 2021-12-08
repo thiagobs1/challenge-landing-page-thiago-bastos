@@ -97,14 +97,46 @@ body {
   line-height: 24px;
 }
 
+.middle-banner {
+  background: #e0e0e0;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 32px;
+  justify-content: center;
+}
+
+.middle-banner-image {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 63px;
+  max-width: 450px;
+}
+
 @media screen and (max-width: 415px) {
-  .main-banner-desktop {
+  .main-banner-desktop,
+  .middle-banner-desktop {
     display: none;
+  }
+  .middle-banner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 14px;
+  }
+
+  .middle-banner-image1 {
+    max-width: 177px;
+    width: 100%;
+  }
+  .middle-banner-image2 {
+    max-width: 368px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 415px) {
-  .main-banner-mobile {
+  .main-banner-mobile,
+  .middle-banner-mobile {
     display: none;
   }
 }
