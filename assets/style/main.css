@@ -28,20 +28,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
-  padding-bottom: 96px;
+  padding-top: 60px;
+  padding-bottom: 80px;
   flex-direction: column;
 }
 
 .top-infocard-text-wrapper {
   max-width: 766px;
-  text-align: center;
   margin-bottom: 66px;
-  margin-top: 66px;
 }
+
+.top-infocard-title-wrapper {
+  text-align: center;
+}
+
 .top-infocard-subtitle {
   font-size: 32px;
   text-transform: uppercase;
+  font-weight: normal;
+  position: relative;
+  top: 16px;
 }
 
 .top-infocard-title {
@@ -71,5 +77,35 @@ body {
 @media screen and (min-width: 415px) {
   .main-banner-mobile {
     display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .top-infocard-text {
+    max-width: 357px;
+  }
+  .top-infocard-section {
+    text-align: center;
+  }
+  .top-infocard-subtitle {
+    font-size: 20px;
+  }
+  .top-infocard-title {
+    font-size: 28px;
+    max-width: 357px;
+  }
+
+  .top-infocard-title-wrapper {
+    padding-bottom: 20px;
+  }
+  .top-infocard-image {
+    max-width: 240px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1280px) {
+  .top-infocard-text {
+    max-width: 520px;
+    text-align: center;
   }
 }
