@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #000;
+}
+
+.page-header {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  padding: 28px;
+}
+.header-logo {
+  display: block;
+}
+
+.main-banner {
+  width: 100%;
+  display: block;
+}
+
+.top-infocard-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 96px;
+  flex-direction: column;
+}
+
+.top-infocard-text-wrapper {
+  max-width: 766px;
+  text-align: center;
+  margin-bottom: 66px;
+  margin-top: 66px;
+}
+.top-infocard-subtitle {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.top-infocard-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 80px;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+}
+
+.top-infocard-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.top-infocard-image {
+  display: block;
+}
+
+@media screen and (max-width: 415px) {
+  .main-banner-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  .main-banner-mobile {
+    display: none;
+  }
+}
