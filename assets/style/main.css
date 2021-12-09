@@ -188,6 +188,31 @@ body {
   margin-bottom: 104px;
 }
 
+.page-footer {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 0;
+}
+
+.footer-icons {
+  list-style: none;
+  display: flex;
+}
+
+.footer-icon {
+  margin: 0 8px 16px;
+}
+
+.footer-text {
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 415px) {
   .main-banner-desktop,
   .middle-banner-desktop,
@@ -220,6 +245,7 @@ body {
 
   .bottom-infocard-description {
     padding: 0 26px;
+    margin-bottom: 104px;
   }
 }
 
@@ -289,6 +315,14 @@ body {
     grid-template-columns: 1fr;
     padding: 36px 26px;
   }
+  .page-footer {
+    padding-bottom: 26px;
+  }
+  .footer-text {
+    text-align: center;
+    max-width: 280px;
+  }
+}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
